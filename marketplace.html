@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Marketplace - Browse Vehicles</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Vehicle Marketplace</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Browse Vehicles</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="filter-section">
+            <h2>Filter by:</h2>
+            <form action="" class="filter-form">
+                <select id="category" name="category">
+                    <option value="all">All Categories</option>
+                    <option value="cars">Cars</option>
+                    <option value="motorcycles">Motorcycles</option>
+                    <option value="trucks">Trucks</option>
+                </select>
+                <select id="price-range" name="price-range">
+                    <option value="all">Price Range</option>
+                    <option value="10000">$0 - $10,000</option>
+                    <option value="20000">$10,000 - $20,000</option>
+                    <option value="50000">$20,000 - $50,000</option>
+                </select>
+                <input type="text" id="search" name="search" placeholder="Search by brand or model">
+                <button type="submit" class="btn">Apply Filters</button>
+            </form>
+        </div>
+
+        <div class="vehicle-list">
+            <h2>Available Vehicles</h2>
+
+            <div class="vehicle-cards">
+                <!-- Example Vehicle Card -->
+                <div class="vehicle-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Car">
+                    <div class="vehicle-info">
+                        <h3>2020 Honda Civic</h3>
+                        <p class="price">$15,000</p>
+                        <p class="details">A reliable and fuel-efficient sedan. Great for city driving.</p>
+                        <button class="btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="vehicle-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Car">
+                    <div class="vehicle-info">
+                        <h3>2018 Ford Mustang</h3>
+                        <p class="price">$25,000</p>
+                        <p class="details">A powerful sports car with impressive performance.</p>
+                        <button class="btn">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Additional Vehicle Cards can go here -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vehicle Marketplace | Explore and Discover Your Dream Vehicle</p>
+    </footer>
+
+</body>
+</html>

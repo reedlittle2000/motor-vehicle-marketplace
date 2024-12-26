@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Marketplace</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="landing-container">
+        <div class="hero-section">
+            <div class="logo">
+                <h1>Vehicle Marketplace</h1>
+                <p>Buy, Sell, and Explore the Best Vehicles at Your Fingertips</p>
+            </div>
+
+            <div class="cta-buttons">
+                <button class="btn-seller" onclick="showSellerLogin()">Login as Seller</button>
+                <button class="btn-customer" onclick="enterMarketplace()"><a href="/marketplace"></a>Enter as Customer</a></button>
+            </div>
+        </div>
+
+        <!-- Seller Login Form (Hidden Initially) -->
+        <div class="login-container" id="sellerLogin">
+            <h2>Seller Login</h2>
+            <form action="/seller-login" method="POST">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Vehicle Marketplace | Empowering Your Automotive Journey</p>
+    </footer>
+
+    <script>
+        function showSellerLogin() {
+            document.getElementById('sellerLogin').style.display = 'block';
+        }
+
+        function enterMarketplace() {
+            window.location.href = '/marketplace';
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard - Vehicle Marketplace</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <h2>Seller Panel</h2>
+            <ul>
+                <li><a href="/dashboard" class="active">Dashboard</a></li>
+                <li><a href="#">Manage Listings</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="/">Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1>Welcome, Seller</h1>
+                <p>Manage your vehicles, track orders, and more.</p>
+            </header>
+
+            <!-- Dashboard Overview -->
+            <section class="overview">
+                <div class="card">
+                    <h3>Total Sales</h3>
+                    <p>$23,450</p>
+                </div>
+                <div class="card">
+                    <h3>Active Listings</h3>
+                    <p>12</p>
+                </div>
+                <div class="card">
+                    <h3>Pending Orders</h3>
+                    <p>5</p>
+                </div>
+            </section>
+
+            <!-- Recent Orders Table -->
+            <section class="recent-orders">
+                <h2>Recent Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Vehicle</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#101</td>
+                            <td>Toyota Corolla</td>
+                            <td>Dec 25, 2024</td>
+                            <td class="completed">Completed</td>
+                        </tr>
+                        <tr>
+                            <td>#102</td>
+                            <td>Honda Civic</td>
+                            <td>Dec 20, 2024</td>
+                            <td class="pending">Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>
